@@ -1,0 +1,63 @@
+/* common styles */
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/Oswald/Oswald-ExtraLight.ttf) format("ttf");
+    font-weight: 200;
+}
+  
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/Oswald/Oswald-Light.ttf) format("ttf");
+    font-weight: 300;
+}
+  
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/Oswald/Oswald-Regular.ttf) format("ttf");
+    font-weight: 400;
+}
+  
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/Oswald/Oswald-SemiBold.ttf) format("ttf");
+    font-weight: 500;
+}
+  
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/Oswald/Oswald-Bold.ttf) format("ttf");
+    font-weight: 600;
+}
+
+:root {
+    --purple-color: rgba(69, 32, 171, 1);
+    --black-color: rgba(20, 20, 20, 1);
+    --orange-color: rgba(255, 188, 91, 1);
+    --white-color: rgba(255, 255, 255, 0.3);
+    --white-full-opacity-color: rgba(255, 255, 255);
+    --light-grey-color: rgba(152, 152, 152, 1);
+    --dark-grey-color: rgba(81, 81, 81, 1);
+}
+
+.center-container {
+    width: 100rem;
+    margin: 0 auto;
+}
+  
+ul {
+    list-style-type: none;
+}
+  
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.8vw;
+    line-height: 0.8vw;
+}
+  
+/* common styles ends */
+  

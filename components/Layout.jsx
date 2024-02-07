@@ -17,6 +17,10 @@ module.exports = function Layout({ title, children }) {
           <Navbar />
         </header>
         {children}
+        <footer>
+          <p>Адрес офиса: Санкт-Петербург, Лиговский пр., 140</p>
+          <p>E-mail: helloworld@elbrus-bootcamp.com</p>
+        </footer>
       </body>
     </html>
   );
