@@ -12,7 +12,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.INTEGER,
         references: {
-          model: 'User',
+          model: 'Users',
           key: 'id',
         },
         onDelete: 'Cascade',
@@ -20,6 +20,11 @@ module.exports = {
       property_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
+        references: {
+          model: 'Properties',
+          key: 'id',
+        },
+        onDelete: 'Cascade',
       },
       createdAt: {
         allowNull: false,

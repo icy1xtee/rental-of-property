@@ -2,7 +2,8 @@ const { Model } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
-    static associate(models) {
+    static associate({ Favorite }) {
+      this.hasMany(Favorite, { foreignKey: 'user_id' });
     }
   }
   User.init(
@@ -13,6 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       email: {
         allowNull: false,
+        unique: true,
         type: DataTypes.TEXT,
       },
       password: {
@@ -21,7 +23,16 @@ module.exports = (sequelize, DataTypes) => {
       },
       isAdmin: {
         allowNull: false,
+        defaultValue: false,
         type: DataTypes.BOOLEAN,
+      },
+      createdAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
+      },
+      updatedAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
       },
     },
     {

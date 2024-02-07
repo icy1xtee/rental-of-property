@@ -21,6 +21,14 @@ module.exports = (sequelize, DataTypes) => {
         },
         onDelete: 'Cascade',
       },
+      createdAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
+      },
+      updatedAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
+      },
     },
     {
       sequelize,

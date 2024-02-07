@@ -23,6 +23,11 @@ module.exports = {
       category_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
+        references: {
+          model: 'Categories',
+          key: 'id',
+        },
+        onDelete: 'Cascade',
       },
       description: {
         allowNull: false,

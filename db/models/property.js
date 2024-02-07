@@ -26,6 +26,11 @@ module.exports = (sequelize, DataTypes) => {
     category_id: {
       allowNull: false,
       type: DataTypes.INTEGER,
+      references: {
+        model: 'Categories',
+        key: 'id',
+      },
+      onDelete: 'Cascade',
     },
     description: {
       allowNull: false,
@@ -34,6 +39,14 @@ module.exports = (sequelize, DataTypes) => {
     coordinates: {
       allowNull: false,
       type: DataTypes.TEXT,
+    },
+    createdAt: {
+      allowNull: false,
+      type: DataTypes.DATE,
+    },
+    updatedAt: {
+      allowNull: false,
+      type: DataTypes.DATE,
     },
   }, {
     sequelize,

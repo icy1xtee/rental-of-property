@@ -21,6 +21,19 @@ module.exports = (sequelize, DataTypes) => {
       property_id: {
         allowNull: false,
         type: DataTypes.INTEGER,
+        references: {
+          model: 'Properties',
+          key: 'id',
+        },
+        onDelete: 'Cascade',
+      },
+      createdAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
+      },
+      updatedAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
       },
     },
     {

@@ -14,6 +14,7 @@ module.exports = {
       },
       email: {
         allowNull: false,
+        unique: true,
         type: Sequelize.TEXT,
       },
       password: {
@@ -22,6 +23,7 @@ module.exports = {
       },
       isAdmin: {
         allowNull: false,
+        defaultValue: false,
         type: Sequelize.BOOLEAN,
       },
       createdAt: {
