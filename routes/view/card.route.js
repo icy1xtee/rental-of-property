@@ -1,6 +1,8 @@
 const router = require('express').Router();
 
-router.get('/', (req, res) => {
+router.get('/:id', (req, res) => {
+  const { id } = req.params;
+  
   res.status(200).send('Card page');
 });
 
