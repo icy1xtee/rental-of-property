@@ -5,8 +5,11 @@ module.exports = function Layout({ title, children }) {
   return (
     <html lang="en">
       <head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
+        <link rel="stylesheet" href="/css/style-reset.css" />
+        <link rel="stylesheet" href="/css/styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script defer src="/scripts/auth.js" />
         <title>{title}</title>
       </head>
       <body>
