@@ -5,7 +5,17 @@ module.exports = {
       'Categories',
       [
         {
-          name: 'test',
+          name: 'apartments',
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: 'rooms',
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: 'houses',
           createdAt: new Date(),
           updatedAt: new Date(),
         },
