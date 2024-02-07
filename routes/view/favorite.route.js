@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {Property} = require('')
+const { Property } = require('../../db/models');
 
 router.get('/', (req, res) => {
   res.status(200).send('Favorite page');
