@@ -1,19 +1,20 @@
 const React = require("react");
 const Layout = require("./Layout");
 
-function MainPage({title, properties}) {
+function MainPage({ title, categories, properties }) {
   return (
-  <Layout title={title}>
-    <div>
+    <Layout title={title}>
+      <div>
         <p>filter</p>
-        {categories.map((el)=> <p>{el.name}</p>)}
-    </div>
-    <div className="PropertyList">
-        {properties.map((el)=>(
-           < Property key = {el.id} property={el}/>
+        {categories.map((el) => (
+          <p>{el.name}</p>
         ))}
-    </div>
-  </Layout>;
-)}
+      </div>
+      <div>
+        <Cardlist properties={properties} />
+      </div>
+    </Layout>
+  );
+}
 
 module.exports = MainPage;
