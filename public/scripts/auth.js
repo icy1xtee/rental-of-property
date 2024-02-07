@@ -21,7 +21,7 @@ if (regForm) {
       });
       const data = await res.json();
       if (data.message === 'ok') {
-        window.location.assign('/hello');
+        window.location.assign('/');
       } else {
         const regError = document.querySelector('.registration_error');
         regError.innerHTML = data.message;
@@ -46,7 +46,7 @@ if (loginForm) {
     });
     const data = await res.json();
     if (data.message === 'ok') {
-      window.location.assign('/hello');
+      window.location.assign('/');
     } else {
       const loginError = document.querySelector('.login_error');
       loginError.innerHTML = data.message;
