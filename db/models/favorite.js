@@ -1,10 +1,10 @@
-"use strict";
-const { Model } = require("sequelize");
+const { Model } = require('sequelize');
+
 module.exports = (sequelize, DataTypes) => {
   class Favorite extends Model {
-    static associate({Property, User}) {
-      this.belongsTo(Property, { foreignKey: "property_id" });
-      this.belongsTo(User, { foreignKey: "user_id" });
+    static associate({ Property, User }) {
+      this.belongsTo(Property, { foreignKey: 'property_id' });
+      this.belongsTo(User, { foreignKey: 'user_id' });
     }
   }
   Favorite.init(
@@ -13,10 +13,10 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         type: DataTypes.INTEGER,
         references: {
-          model: "User",
-          key: "id",
+          model: 'User',
+          key: 'id',
         },
-        onDelete: "Cascade",
+        onDelete: 'Cascade',
       },
       property_id: {
         allowNull: false,
@@ -25,8 +25,8 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      modelName: "Favorite",
-    }
+      modelName: 'Favorite',
+    },
   );
   return Favorite;
 };
