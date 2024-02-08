@@ -1,13 +1,13 @@
 const React = require('react');
 
-module.exports = function Navbar() {
+module.exports = function Navbar({ user }) {
   return (
     <div className="navbar">
       <a href="/" className="navbar__logo">Neavito</a>
       <div className="navbar__links">
-        <a className="navbar__link-favorite" href="/favorite">Избранное</a>
-        <a className="navbar__link-login" href="/auth">Войти</a>
-        <a className="navbar__link-registration" href="/auth">Создать аккаунт</a>
+        {user && <a className="navbar__link-favorite" href="/favorite">Избранное</a>}
+        {!user && <a className="navbar__link-login" href="/auth">Войти или зарегистрироваться</a>}
+        {user && <a className="navbar__link-logout" href="/logout">Выйти</a>}
       </div>
     </div>
   );

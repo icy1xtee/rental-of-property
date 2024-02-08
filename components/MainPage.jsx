@@ -6,7 +6,7 @@ function MainPage({
   title, categories, properties, user,
 }) {
   return (
-    <Layout title={title}>
+    <Layout title={title} user={user}>
       <div className="center-container">
         <div className="filter__containter">
           <p className="filter__container_name">Фильтр</p>

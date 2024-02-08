@@ -1,7 +1,7 @@
 const React = require('react');
 const Navbar = require('./Navbar');
 
-module.exports = function Layout({ title, children }) {
+module.exports = function Layout({ title, children, user }) {
   return (
     <html lang="en">
       <head>
@@ -19,7 +19,7 @@ module.exports = function Layout({ title, children }) {
       </head>
       <body>
         <header className="header">
-          <Navbar />
+          <Navbar user={user} />
         </header>
         {children}
         <footer className="footer">
