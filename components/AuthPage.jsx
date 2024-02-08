@@ -4,7 +4,7 @@ const Layout = require('./Layout');
 module.exports = function AuthPage({ title }) {
   return (
     <Layout title={title}>
-      <div className="center-container__signin">
+      <div className="center-container">
         <div className="registration">
           <form className="registration__form">
             <input className="registration__form-input" name="name" placeholder="Name" required />

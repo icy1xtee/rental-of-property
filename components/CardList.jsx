@@ -3,7 +3,7 @@ const Card = require('./Card')
 
 module.exports = function CardList({ properties }) {
   return (
-    <div className="cardList">
+    <div className="cardList__containter">
       {properties.map((el) => (
         <Card key={el.id} property={el} />
       ))}
