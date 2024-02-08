@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const FavoritePage = require('../../components/FavoritePage');
-const { Favorite, Property } = require('../../db/models');
+const { Favorite, Property, Img } = require('../../db/models');
 
 router.get('/', async (req, res) => {
   try {
@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
       where: { user_id: res.locals.user.id },
     });
     const props = favorite.map(
-      async (el) => await Property.findOne({ where: { id: el.property_id } })
+      async (el) => await Property.findOne({ where: { id: el.property_id }, include: [{ model: Img, attributes: ['url'] }] }),
     );
     const properties = await Promise.all(props);
     const html = res.renderComponent(FavoritePage, {

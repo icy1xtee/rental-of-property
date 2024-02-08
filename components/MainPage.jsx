@@ -11,7 +11,7 @@ function MainPage({ title, categories, properties }) {
           <form className="filter__container_form">
             {categories.map((el) => (
               <div className="filter__container_form_element">
-                <input className="form_element-input" type="radio" id={el.id} name="category" value={el.name} />
+                <input className="form_element-input" type="radio" id={el.id} name="category" value={el.id} />
                 <label className="form_element-label">{el.name}</label>
               </div>
             ))}

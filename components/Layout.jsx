@@ -12,6 +12,7 @@ module.exports = function Layout({ title, children }) {
         <link rel="stylesheet" href="/css/main_page.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script defer src="/scripts/auth.js" />
+        <script defer src="/scripts/filter.js" />
         <title>{title}</title>
       </head>
       <body>
