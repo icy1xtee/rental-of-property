@@ -42,6 +42,7 @@
 .center-container {
     width: 100rem;
     margin: 0 auto;
+    display: flex;
 }
   
 ul {

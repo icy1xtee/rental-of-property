@@ -1,0 +1,18 @@
+.filter__containter {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.cardList__containter {
+  display: flex;
+  text-align: center;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.cardList__containter-card {
+  width: 33%;
+  border: solid 1px;
+  margin: 1rem;
+}
