@@ -13,6 +13,7 @@ module.exports = function Layout({ title, children }) {
         <link rel="stylesheet" href="/css/main_page.css" />
         <script defer src="/scripts/auth.js" />
         <script defer src="/scripts/filter.js" />
+        <script defer src="/scripts/slump.js" />
         <title>{title}</title>
       </head>
       <body>
