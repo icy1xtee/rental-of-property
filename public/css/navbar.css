@@ -1,16 +1,16 @@
 .navbar{
     display: flex; 
     align-items: center;
-    background-color: #9b9696; 
+    height: 3rem;
+    background-color: var(--headfoot-color); 
     overflow: hidden;
     justify-content: space-around;
+    color: var(--headfoottext-color);
 }
 
-.navbar__links {
-    display: block;
-    color: white;
+.navbar__links>a {
+    color: var(--headfoottext-color);
     text-align: center;
     padding: 1rem 2rem;
     text-decoration: none;
-    
 }

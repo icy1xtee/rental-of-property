@@ -2,7 +2,9 @@ const React = require('react');
 const Layout = require('./Layout');
 const CardList = require('./CardList');
 
-function MainPage({ title, categories, properties }) {
+function MainPage({
+  title, categories, properties, user,
+}) {
   return (
     <Layout title={title}>
       <div className="center-container">
@@ -18,7 +20,7 @@ function MainPage({ title, categories, properties }) {
             <button className="filter__container_form-button" type="submit">Submit</button>
           </form>
         </div>
-        <CardList properties={properties} />
+        <CardList properties={properties} user={user} />
       </div>
     </Layout>
   );
