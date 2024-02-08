@@ -13,13 +13,13 @@ module.exports = function Layout({ title, children }) {
         <title>{title}</title>
       </head>
       <body>
-        <header>
+        <header className="header">
           <Navbar />
         </header>
         {children}
-        <footer>
-          <p>Адрес офиса: Санкт-Петербург, Лиговский пр., 140</p>
-          <p>E-mail: helloworld@elbrus-bootcamp.com</p>
+        <footer className="footer">
+          <p className="footer__address">Адрес офиса: Санкт-Петербург, Лиговский пр., 140</p>
+          <p className="footer__email">E-mail: helloworld@elbrus-bootcamp.com</p>
         </footer>
       </body>
     </html>

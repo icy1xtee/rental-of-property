@@ -5,7 +5,6 @@ const MainPage = require('../../components/MainPage');
 router.get('/', async (req, res) => {
   try {
     const properties = await Property.findAll({ include: [{ model: Img, attributes: ['url'] }] });
-    console.log(properties[0].Imgs[0].url);
     const categories = await Category.findAll();
     const html = res.renderComponent(MainPage, {
       categories,
