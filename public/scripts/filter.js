@@ -16,7 +16,7 @@ if (filterForm) {
       const data = await res.json();
       document.querySelector('.cardList__containter').remove();
       const centerContainer = document.querySelector('.center-container');
-      centerContainer.insertAdjacentHTML('beforeend', data)
+      centerContainer.insertAdjacentHTML('beforeend', data);
     }
   });
 }

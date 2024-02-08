@@ -10,7 +10,6 @@ router.post('/', async (req, res) => {
       include: [{ model: Img, attributes: ['url'] }],
     });
     const html = res.renderComponent(CardList, { properties });
-    console.log(html);
     res.json(html);
   } catch ({ message }) {
     res.json(message);
