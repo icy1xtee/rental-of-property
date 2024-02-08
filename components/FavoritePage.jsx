@@ -2,13 +2,14 @@ const React = require('react');
 const Layout = require('./Layout');
 const CardList = require('./CardList');
 
-module.exports = function FavoritePage({ title, properties }) {
+module.exports = function FavoritePage({ title, properties, user }) {
   return (
     <Layout title={title}>
       <div className="center-container">
         <p className="center-container-title">Избранное</p>
         <div className="cardList__container">
-          <CardList properties={properties} />
+          {user && <CardList properties={properties} user={user} />}
+          {(properties.length === 0) ? <p className="cardList__container-nocards">В избранном пока ничего нет</p> : false}
         </div>
       </div>
     </Layout>

@@ -8,6 +8,7 @@ const errRouter = require('./view/incorrect404.route');
 
 const apiAuthRouter = require('./api/authApi.route');
 const apiFilterRouter = require('./api/filterApi.route');
+const apiCardDeleteRouter = require('./api/cardDeleteApi.route');
 
 router.use('/', mainRouter);
 router.use('/auth', authRouter);
@@ -17,5 +18,7 @@ router.use('/logout', logoutRouter);
 
 router.use('/api/auth', apiAuthRouter);
 router.use('/api/filter', apiFilterRouter);
+router.use('/api/cardDelete', apiCardDeleteRouter);
+
 router.use('*', errRouter);
 module.exports = router;

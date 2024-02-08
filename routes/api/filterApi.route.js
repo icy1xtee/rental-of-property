@@ -12,7 +12,7 @@ router.post('/', async (req, res) => {
     const html = res.renderComponent(CardList, { properties });
     res.json(html);
   } catch ({ message }) {
-    res.json(message);
+    res.json({ message });
   }
 });
 
