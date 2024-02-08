@@ -1,15 +1,16 @@
-const router = require("express").Router();
-const { Property, Category } = require("../../db/models");
-const MainPage = require("../../components/MainPage");
+const router = require('express').Router();
+const { Property, Category, Img } = require('../../db/models');
+const MainPage = require('../../components/MainPage');
 
-router.get("/", async (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const properties = await Property.findAll();
+    const properties = await Property.findAll({ include: [{ model: Img, attributes: ['url'] }] });
+    console.log(properties[0].Imgs[0].url);
     const categories = await Category.findAll();
     const html = res.renderComponent(MainPage, {
       categories,
       properties,
-      title: "CardList",
+      title: 'CardList',
     });
     res.status(200).send(html);
   } catch ({ message }) {
