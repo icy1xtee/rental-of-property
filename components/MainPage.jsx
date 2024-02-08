@@ -1,5 +1,6 @@
 const React = require("react");
 const Layout = require("./Layout");
+const CardList = require('./CardList')
 
 function MainPage({ title, categories, properties }) {
   return (
@@ -11,7 +12,7 @@ function MainPage({ title, categories, properties }) {
         ))}
       </div>
       <div>
-        <Cardlist properties={properties} />
+        <CardList properties={properties} />
       </div>
     </Layout>
   );
