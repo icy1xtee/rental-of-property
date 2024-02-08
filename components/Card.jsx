@@ -8,7 +8,7 @@ module.exports = function Card({ property, user }) {
       <p className="card-title">{property.title}</p>
       <p className="card-price">{property.price}</p>
       <button className="card-button" type="button" id={property.id}>Посмотреть</button>
-      {user.isAdmin && <button className="admin-button-delete" id={property.id} type="button">Удалить</button>}
+      {user && user.isAdmin && <button className="admin-button-delete" id={property.id} type="button">Удалить</button>}
     </div>
   );
 };
