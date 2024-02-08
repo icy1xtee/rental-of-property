@@ -1,5 +1,5 @@
-const React = require("react");
-const Card = require('./Card')
+const React = require('react');
+const Card = require('./Card');
 
 module.exports = function CardList({ properties }) {
   return (
