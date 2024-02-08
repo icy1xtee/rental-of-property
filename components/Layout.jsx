@@ -13,6 +13,7 @@ module.exports = function Layout({ title, children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script defer src="/scripts/auth.js" />
         <script defer src="/scripts/filter.js" />
+        <script defer src="/scripts/slump.js" />
         <title>{title}</title>
       </head>
       <body>
