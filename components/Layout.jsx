@@ -16,6 +16,8 @@ module.exports = function Layout({ title, children, user }) {
         <script defer src="/scripts/filter.js" />
         <script defer src="/scripts/delete.js" />
         <script defer src="/scripts/slump.js" />
+        <script defer src="/scripts/changeCard.js" />
+        <script defer src="/scripts/addCard.js" />
         <title>{title}</title>
       </head>
       <body>

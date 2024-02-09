@@ -11,7 +11,7 @@ module.exports = function CardPage({
           && (
             <div className="center-container__form">
               <p>Изменить карточку</p>
-              <form className="changeProrerty">
+              <form className="changeProrerty" data-id={property.id}>
                 <select className="form__input" name="category">
                   {categories.map((el) => <option value={el.id}>{el.name}</option>)}
                 </select>
@@ -20,8 +20,8 @@ module.exports = function CardPage({
                 <input className="form__input" name="price" placeholder="Price" />
                 <input className="form__input" name="description" placeholder="Description" />
                 <input className="form__input" name="coordinates" placeholder="Coordinates" />
-                <input className="form__input" name="images" placeholder="Images" />
                 <button className="form__input" type="submit"> Отправить </button>
+                <p className="form__result" />
               </form>
             </div>
           )}
