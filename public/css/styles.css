@@ -71,7 +71,8 @@ ul {
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+    color: var(--headfoottext-color);
 }
 
 /* common styles ends */
@@ -81,10 +82,11 @@ img {
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  height: 3rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    height: 3rem;
 }
 
 footer {
