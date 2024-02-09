@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const Map = require('../components/Map');
 const mainRouter = require('./view/main.route');
 const authRouter = require('./view/auth.route');
 const cardRouter = require('./view/card.route');

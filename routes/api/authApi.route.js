@@ -32,7 +32,7 @@ router.post('/login', async (req, res) => {
       const user = await User.findOne({ where: { email } });
       if (user) {
         const isSame = await bcrypt.compare(req.body.password, user.password);
-        console.log(isSame);
+        // console.log(isSame);
         if (isSame) {
           createCookie(user)(req, res, () => {
             res.status(201).json({ message: 'ok' });
