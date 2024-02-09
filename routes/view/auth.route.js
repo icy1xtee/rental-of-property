@@ -1,11 +1,16 @@
 const router = require('express').Router();
-const Layout = require('../../components/Layout');
+const AuthPage = require('../../components/AuthPage');
 
 router.get('/', (req, res) => {
-  const html = res.renderComponent(Layout, {
-
-  });
-  res.status(201).send(html);
+  try {
+    const html = res.renderComponent(AuthPage, {
+      title: 'Sign in',
+    });
+    res.status(200).send(html);
+  } catch ({ message }) {
+    // console.log(message);
+    res.status(500).send('Server side problem, please try again later');
+  }
 });
 
 module.exports = router;

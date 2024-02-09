@@ -1,0 +1,90 @@
+.filter__containter {
+  flex-direction: column;
+  width: 12%;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  background-color: rgba(255, 255, 255, 0.706);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.cardList__containter {
+  display: flex;
+  text-align: center;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.cardList__containter-card {
+  width: 30%;
+  margin: 1rem;
+  background-color: rgba(255, 255, 255, 0.706);
+  border-radius: 1.5rem;
+  height: 30rem;
+}
+
+.card-picture-containter {
+  margin: 1rem auto;
+  border-radius: 0.5rem;     
+  width: 90%;
+  max-height: 20rem;
+  overflow: hidden;
+}
+
+.card-picture {
+  object-fit: cover;
+}
+
+.card-favicon {
+  width: 1.5rem;
+  fill: rgba(0, 0, 0, 0.718);
+}
+
+.filter__container_name {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.filter__container_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__container_form_element {
+  margin-top: 1rem;
+  width: 100%;
+}
+.filter__container_form-button{
+  margin-top: 1rem;
+  width: 100%;
+}
+.navbar__logo {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+.card-price {
+  margin: 1rem;
+}
+
+.cardList__container-nocards {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: auto;
+  color: azure;
+}
+
+.center-container-title {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 3rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
