@@ -1,4 +1,5 @@
 require('@babel/register');
+require('dotenv').config();
 const express = require('express');
 const serverConfig = require('./config/serverConfig');
 const indexRouter = require('./routes/index.route');
