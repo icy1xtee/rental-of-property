@@ -12,12 +12,14 @@ module.exports = function Layout({ title, children, user }) {
         <link rel="stylesheet" href="/css/navbar.css" />
         <link rel="stylesheet" href="/css/main_page.css" />
         <link rel="stylesheet" href="/css/card_page.css" />
+        <link rel="stylesheet" href="/css/incorrect.css" />
         <script defer src="/scripts/auth.js" />
         <script defer src="/scripts/filter.js" />
         <script defer src="/scripts/delete.js" />
         <script defer src="/scripts/slump.js" />
         <script defer src="/scripts/changeCard.js" />
         <script defer src="/scripts/addCard.js" />
+        <script defer src="/scripts/favotite.js" />
         <title>{title}</title>
       </head>
       <body>
