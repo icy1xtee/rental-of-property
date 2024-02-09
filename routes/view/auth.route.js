@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
     });
     res.status(200).send(html);
   } catch ({ message }) {
-    console.log(message);
+    // console.log(message);
     res.status(500).send('Server side problem, please try again later');
   }
 });

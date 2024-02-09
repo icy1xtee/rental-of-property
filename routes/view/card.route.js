@@ -6,7 +6,7 @@ router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;
     const property = await Property.findOne({ where: { id }, include: [{ model: Img, attributes: ['url'] }] });
-    console.log(property);
+    // console.log(property);
     const html = res.renderComponent(CardPage, {
       title: property.title,
       property,

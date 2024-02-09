@@ -1,95 +1,103 @@
 /* common styles */
 @font-face {
-    font-family: "Oswald";
-    src: url(../fonts/Oswald/Oswald-ExtraLight.ttf) format("ttf");
-    font-weight: 200;
+  font-family: 'Oswald';
+  src: url(../fonts/Oswald/Oswald-ExtraLight.ttf) format('ttf');
+  font-weight: 200;
 }
-  
+
 @font-face {
-    font-family: "Oswald";
-    src: url(../fonts/Oswald/Oswald-Light.ttf) format("ttf");
-    font-weight: 300;
+  font-family: 'Oswald';
+  src: url(../fonts/Oswald/Oswald-Light.ttf) format('ttf');
+  font-weight: 300;
 }
-  
+
 @font-face {
-    font-family: "Oswald";
-    src: url(../fonts/Oswald/Oswald-Regular.ttf) format("ttf");
-    font-weight: 400;
+  font-family: 'Oswald';
+  src: url(../fonts/Oswald/Oswald-Regular.ttf) format('ttf');
+  font-weight: 400;
 }
-  
+
 @font-face {
-    font-family: "Oswald";
-    src: url(../fonts/Oswald/Oswald-SemiBold.ttf) format("ttf");
-    font-weight: 500;
+  font-family: 'Oswald';
+  src: url(../fonts/Oswald/Oswald-SemiBold.ttf) format('ttf');
+  font-weight: 500;
 }
-  
+
 @font-face {
-    font-family: "Oswald";
-    src: url(../fonts/Oswald/Oswald-Bold.ttf) format("ttf");
-    font-weight: 600;
+  font-family: 'Oswald';
+  src: url(../fonts/Oswald/Oswald-Bold.ttf) format('ttf');
+  font-weight: 600;
 }
 
 :root {
-    --headfoot-color: #363660e4;
-    --headfoottext-color: azure;
+  --headfoot-color: #363660e4;
+  --headfoottext-color: azure;
 }
 
-
 html {
-    font-family: "Oswald", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 0.8vw;
-    line-height: 0.8vw;
-    min-height: 100%;
-    background: rgb(0,10,77);
-    background: linear-gradient(15deg, rgba(0,10,77,1) 0%, rgba(113,157,215,0.5032387955182073) 72%, rgba(221,235,254,0.30996148459383754) 100%);
-    background-size: 100%;
-    background-repeat: no-repeat;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0.8vw;
+  line-height: 0.8vw;
+  min-height: 100%;
+  background: rgb(0, 10, 77);
+  background: linear-gradient(
+    15deg,
+    rgba(0, 10, 77, 1) 0%,
+    rgba(113, 157, 215, 0.5032387955182073) 72%,
+    rgba(221, 235, 254, 0.30996148459383754) 100%
+  );
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 body {
-    position: relative;
-    min-height: calc(100vh - 7rem);
+  position: relative;
+  min-height: calc(100vh - 7rem);
 }
 
 .center-container {
-    width: 100rem;
-    margin: 5rem auto;
-    display: flex;
-    min-height: calc(100vh - 13rem);
-    background-color: rgba(255, 255, 255, 0.336);
-    border-radius: 1.5rem;
-    padding: 3rem;
+  width: 100rem;
+  margin: 5rem auto;
+  display: flex;
+  min-height: calc(100vh - 13rem);
+  background-color: rgba(255, 255, 255, 0.336);
+  border-radius: 1.5rem;
+  padding: 3rem;
 }
-  
+
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
-  
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* common styles ends */
 
 img {
-    max-width: 25rem;
+  max-width: 25rem;
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    height: 3rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 3rem;
 }
 
 footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    height: 3rem;
-    background-color: var(--headfoot-color); 
-    align-items: center;
-    color: var(--headfoottext-color);
-    flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 3rem;
+  background-color: var(--headfoot-color);
+  align-items: center;
+  color: var(--headfoottext-color);
+  flex: 0 0 auto;
+}
+
+[class*='copyrights'] {
+  display: none !important;
 }

@@ -6,7 +6,7 @@ router.get('/', async (req, res) => {
   try {
     const properties = await Property.findAll({ include: [{ model: Img, attributes: ['url'] }] });
     const categories = await Category.findAll();
-    console.log(res.locals.user);
+    // console.log(res.locals.user);
     const html = res.renderComponent(MainPage, {
       categories,
       properties,
