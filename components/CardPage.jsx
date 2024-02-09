@@ -33,12 +33,12 @@ module.exports = function CardPage({
         <div className="maindata__container">
           <div className="information__containter">
             <p className="information__containter-title">{property.title}</p>
-            <p className="information__containter-address">{property.address}</p>
-            <p className="information__containter-price">{property.price}</p>
+            <p className="information__containter-address">{`Адрес: ${property.address}`}</p>
+            <p className="information__containter-price">{`Цена за сутки: ${property.price}`}</p>
           </div>
           <div className="description_container">
+            <p className="description_container-title"> Описание</p>
             <p className="description_container-desc">{property.description}</p>
-            <svg className="description_container-card-favicon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" /></svg>
           </div>
           <div className="map_container">
             <div id="yandexmap" style={{ width: '400px', height: '300px' }} />

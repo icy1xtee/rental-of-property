@@ -17,7 +17,7 @@ function MainPage({
                 <label className="form_element-label">{el.name}</label>
               </div>
             ))}
-            <button className="filter__container_form-button" type="submit">Submit</button>
+            <button className="filter__container_form-button" type="submit">Применить</button>
           </form>
         </div>
         <CardList properties={properties} user={user} />

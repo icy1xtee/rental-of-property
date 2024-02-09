@@ -114,3 +114,18 @@ footer {
 [class*='copyrights'] {
   display: none !important;
 }
+
+.card-favicon__button {
+  border: none;
+  border-radius: 1rem;
+  height: 2rem;
+  width: 1rem;
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  z-index: 90;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

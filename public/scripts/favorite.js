@@ -1,18 +1,20 @@
-const cardist = document.querySelector(".cardList__container");
+const cardListFav = document.querySelector('.cardList__containter');
 
-if (cardList) {
-  cardList.addEventListener('click', async (event) => {
-    if (event.target.classList.contains('card-favicon')) {
+if (cardListFav) {
+  cardListFav.addEventListener('click', async (event) => {
+    if (event.target.classList.contains('card-favicon__button')) {
+      console.log('click');
       const card = event.target.closest('.cardList__containter-card');
       const { id } = card.dataset;
-
       const res = await fetch(`/api/cardFav/${id}`, {
         method: 'POST',
       });
-
       const data = await res.json();
+      const favIcon = document.querySelector(`.card-favicon[data-id='${id}']`);
       if (data.message === 'confirm') {
-        event.target.closest('.cardList__containter-card').remove();
+        favIcon.style.fill = 'rgba(194, 50, 50, 0.718)';
+      } else {
+        favIcon.style.fill = 'rgba(0, 0, 0, 0.718)';
       }
     }
   });
