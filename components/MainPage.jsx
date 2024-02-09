@@ -23,7 +23,7 @@ function MainPage({
         <CardList properties={properties} user={user} />
       </div>
     </Layout>
-  );  
+  );
 }
 
 module.exports = MainPage;

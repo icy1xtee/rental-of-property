@@ -73,6 +73,17 @@ ul {
 a {
     text-decoration: none;
     color: var(--headfoottext-color);
+    transition: 0.2s;
+}
+
+a:hover {
+  scale: 1.1
+}
+
+.navbar__links {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 /* common styles ends */
