@@ -1,0 +1,19 @@
+.center-container__form {
+    display: flex;
+    align-items: center;
+}
+
+.addProrerty {
+    display: flex;
+    flex-direction: column;
+    margin: 0.2rem;
+}
+
+.addProrerty>input {
+    margin-top: 0.5rem;
+    width: 20rem;
+}
+.formadd__input {
+    margin-top: 0.5rem;
+
+}

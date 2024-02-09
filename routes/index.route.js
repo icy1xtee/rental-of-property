@@ -13,6 +13,7 @@ const apiFilterRouter = require('./api/filterApi.route');
 const apiCardDeleteRouter = require('./api/cardDeleteApi.route');
 const apiCardChangeRouter = require('./api/cardChangeApi.route');
 const apiCardAddRouter = require('./api/cardAddApi.route');
+const apiCardFavRouter = require('./api/cardFavApi.route');
 
 router.use('/', mainRouter);
 router.use('/auth', authRouter);
@@ -26,6 +27,8 @@ router.use('/api/filter', apiFilterRouter);
 router.use('/api/cardDelete', apiCardDeleteRouter);
 router.use('/api/cardChange', apiCardChangeRouter);
 router.use('/api/cardAdd', apiCardAddRouter);
+router.use('/api/cardFav', apiCardFavRouter);
+
 
 router.use('*', errRouter);
 module.exports = router;

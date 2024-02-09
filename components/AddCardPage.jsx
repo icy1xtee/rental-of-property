@@ -7,10 +7,10 @@ module.exports = function AddCardPage({
   return (
     <Layout title={title} user={user}>
       <div className="center-container">
+        <p className="center-container-title">Добавить карточку</p>
         {user && user.isAdmin
           && (
             <div className="center-container__form">
-              <p>Добавить карточку</p>
               <form className="addProrerty">
                 <select className="formadd__input" name="category">
                   {categories.map((el) => <option value={el.id}>{el.name}</option>)}

@@ -38,13 +38,53 @@
 }
 
 .card-favicon {
-  position: absolute;
-  margin-top: 1.5rem;
-  margin-left: 8rem;
-  z-index: 1;
-  width: 3rem;
+  width: 1.5rem;
   fill: rgba(0, 0, 0, 0.718);
-  stroke: rgba(255, 255, 255, 0.579); 
-  stroke-width: 2; 
-  stroke-linecap: round;
+}
+
+.filter__container_name {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.filter__container_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__container_form_element {
+  margin-top: 1rem;
+  width: 100%;
+}
+.filter__container_form-button{
+  margin-top: 1rem;
+  width: 100%;
+}
+.navbar__logo {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+.card-price {
+  margin: 1rem;
+}
+
+.cardList__container-nocards {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: auto;
+  color: azure;
+}
+
+.center-container-title {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 3rem;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
